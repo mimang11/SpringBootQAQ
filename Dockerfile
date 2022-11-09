@@ -1,5 +1,5 @@
-FROM java:8
+FROM openjdk:8
 copY *.jar /app.jar
-CMD ["--server.port=8080"]
-EXPOSE 8080
+CMD ["--server.port=8989"]
+EXPOSE 8989
 ENTRYPOINT ["java","-jar","/app.jar"]
