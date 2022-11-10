@@ -37,3 +37,7 @@ mybatis:
   mapper-locations: classpath:mappers/*.xml
   # 使用type-aliases-package中指定entity扫描包类让mybatis自定扫描到自定义的entity。
   type-aliases-package: com.xkcoding.orm.mybatis.entity
+jasypt:
+  encryptor:
+    password: ammQAQ
+    algorithm: PBEWithMD5AndDES
