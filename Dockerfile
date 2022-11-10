@@ -1,5 +1,5 @@
 FROM openjdk:8
 COPY *.jar /app.jar
-CMD ["--server.port=8989"]
+CMD ["--server.port=8989 --jasypt.encryptor.password=ammQAQ"]
 EXPOSE 8989
-ENTRYPOINT ["java","-jar","*.jar","--jasypt.encryptor.password=ammQAQ","/app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
